@@ -3,24 +3,31 @@ public class Carro {
     private int placa;
     private String marca;
     private String modelo;
-    private double anio;
+    private int año;
     private String color;
     private String cilindraje;
-    private String ccombustible;
+    private String combustible;
     private int pasajeros;
-    private double precio;
-    //lista circular
+    private int precio;
+    private String llave;
+    private String estado;
 
-    public Carro(int placa, String marca, String modelo, double anio, String color, String cilindraje, String ccombustible, int pasajeros, double precio) {
+    public Carro(int placa, String marca, String modelo, int año, String color, String cilindraje, String combustible, int pasajeros, int precio, String llave, String estado) {
         this.placa = placa;
         this.marca = marca;
         this.modelo = modelo;
-        this.anio = anio;
+        this.año = año;
         this.color = color;
         this.cilindraje = cilindraje;
-        this.ccombustible = ccombustible;
+        this.combustible = combustible;
         this.pasajeros = pasajeros;
         this.precio = precio;
+        this.llave = llave;
+        this.estado = estado;
+    }
+
+    public Carro() {
+        
     }
 
     public int getPlaca() {
@@ -47,12 +54,12 @@ public class Carro {
         this.modelo = modelo;
     }
 
-    public double getAnio() {
-        return anio;
+    public int getAño() {
+        return año;
     }
 
-    public void setAnio(double anio) {
-        this.anio = anio;
+    public void setAño(int año) {
+        this.año = año;
     }
 
     public String getColor() {
@@ -71,12 +78,12 @@ public class Carro {
         this.cilindraje = cilindraje;
     }
 
-    public String getCcombustible() {
-        return ccombustible;
+    public String getCombustible() {
+        return combustible;
     }
 
-    public void setCcombustible(String ccombustible) {
-        this.ccombustible = ccombustible;
+    public void setCombustible(String combustible) {
+        this.combustible = combustible;
     }
 
     public int getPasajeros() {
@@ -87,11 +94,27 @@ public class Carro {
         this.pasajeros = pasajeros;
     }
 
-    public double getPrecio() {
+    public int getPrecio() {
         return precio;
     }
 
-    public void setPrecio(double precio) {
+    public void setPrecio(int precio) {
         this.precio = precio;
+    }
+
+    public String getLlave() {
+        return llave;
+    }
+
+    public void setLlave(String llave) {
+        this.llave = llave;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 }

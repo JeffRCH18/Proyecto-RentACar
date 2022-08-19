@@ -6,7 +6,6 @@ import ventanas.Registrar_clientes;
 
 public class Main {
     public static void main(String[] args) {
-        cola cola = new cola();
         Principal obj_principal = new Principal();
         obj_principal.setVisible(true);
     }
